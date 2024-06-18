@@ -15,3 +15,8 @@ A free and open-source Telegram userbot based on Telethon and fully modular
  4. Choose a name for your app and copy "API_ID" & "API_HASH" to config.ini
  5. save and start "main.py": `python3 main.py`
 
+## Roadmap (not in order):
+
+ - Multi-Lang support (i need someone that can translate other language)
+ - Plugins repository (might be added very soon)
+
