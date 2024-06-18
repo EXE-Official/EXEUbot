@@ -16,17 +16,17 @@ async def copy_info(event, client):
         last_name = user.last_name
         bio = user_info.full_user.about
         
-        # Aggiorna il profilo dell'utente
+        
         await client(UpdateProfileRequest(
             first_name=first_name,
             last_name=last_name,
             about=bio,
         ))
 
-        # Scarica l'immagine del profilo dell'utente
+        
         profile_photo = await client.download_profile_photo(user, file='profile_photo.jpg')
         
-        # Imposta l'immagine del profilo scaricata come foto del profilo
+        
         await client(UploadProfilePhotoRequest(
             file=await client.upload_file(profile_photo)
         ))

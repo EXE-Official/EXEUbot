@@ -6,7 +6,7 @@ async def send_dm(event, client):
         await event.respond("Please provide a username and a message.")
         return
 
-    username = text[1].replace("@", "")  # Rimuovi il simbolo '@' se presente
+    username = text[1].replace("@", "")  
     dm_message = text[2]
 
     try:
@@ -16,7 +16,7 @@ async def send_dm(event, client):
         return
 
     try:
-        await client.send_message(user, dm_message)  # Passa direttamente l'entità dell'utente
+        await client.send_message(user, dm_message)  
         await event.respond(f"Message sent to @{username}!")
     except Exception as e:
         print(e)

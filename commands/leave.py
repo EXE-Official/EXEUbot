@@ -7,7 +7,7 @@ async def leave_group(event, client):
             
             await event.respond("I left the group.")
             
-            # Lascia il gruppo
+            
             await client.delete_dialog(chat_id)
         else:
             await event.respond("This command can only be used in groups.")

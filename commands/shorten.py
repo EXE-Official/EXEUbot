@@ -3,13 +3,13 @@ import requests
 import re
 
 async def shorten_url(event):
-    # Estrai l'URL dal messaggio usando una regex migliorata
+    
     message = event.message.message
     match = re.search(r'\.short\s+(\S+)', message)
     if match:
         url_to_shorten = match.group(1)
         try:
-            # Utilizza il servizio TinyURL per abbreviare l'URL
+            
             api_url = "https://tinyurl.com/api-create.php?url=" + url_to_shorten
             response = requests.get(api_url)
             if response.status_code == 200:
