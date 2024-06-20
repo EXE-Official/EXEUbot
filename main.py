@@ -23,8 +23,6 @@ def load_commands(client):
             if hasattr(module, 'register'):
                 module.register(client)
 
-
-
 async def main():
     # Read credentials from config.ini file
     config = configparser.ConfigParser()
@@ -53,4 +51,3 @@ def handle_signal(signum, frame):
 if __name__ == '__main__':
     signal.signal(signal.SIGINT, handle_signal)
     asyncio.run(main())
-
