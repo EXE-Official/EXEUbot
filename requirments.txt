@@ -2,10 +2,8 @@ ipwhois
 telethon
 cryptg
 humanize
-platform
 psutil
 speedtest-cli
-Pillow
 requests
 urllib3
 tqdm
