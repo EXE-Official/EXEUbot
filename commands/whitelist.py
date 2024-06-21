@@ -2,8 +2,6 @@ from telethon import events
 from telethon.tl.functions.contacts import BlockRequest
 import commands.database as db
 
-# REMOVING THIS FILE WILL CAUSE THE CRASH OF THE USERBOT!!!
-
 def register(client):
     db.initialize_database()
 
@@ -16,8 +14,12 @@ def register(client):
             else:
                 user = await client.get_entity(user_id)
                 user_id = user.id
-            db.add_to_whitelist(user_id)
-            await event.edit(f"User {user_id} added to whitelist.")
+            
+            if db.is_whitelisted(user_id):
+                await event.edit(f"User {user_id} is already in the whitelist.")
+            else:
+                db.add_to_whitelist(user_id)
+                await event.reply(f"User {user_id} added to whitelist.")
         except Exception as e:
             await event.reply(f"Error: {str(e)}")
 
@@ -30,8 +32,12 @@ def register(client):
             else:
                 user = await client.get_entity(user_id)
                 user_id = user.id
-            db.remove_from_whitelist(user_id)
-            await event.edit(f"User {user_id} removed from whitelist.")
+            
+            if db.is_whitelisted(user_id):
+                db.remove_from_whitelist(user_id)
+                await event.reply(f"User {user_id} removed from whitelist.")
+            else:
+                await event.edit(f"User {user_id} is not in the whitelist.")
         except Exception as e:
             await event.reply(f"Error: {str(e)}")
 
