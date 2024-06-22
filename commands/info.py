@@ -23,7 +23,7 @@ async def system_info(event):
             f"🔳 Kernel: {system_info.release}\n"
             f"🐍 Python version: {python_version}\n"
             f"🤖 Telethon version: {telethon_version}\n"
-            f"⚙️ Userbot version: alpha 1.05\n"
+            f"⚙️ Userbot version: Beta 1.14\n"
             f"⚡ CPU usage: {cpu_usage}%\n"
             f"📈 RAM usage: {memory.percent}% ({humanize.naturalsize(memory.used)})\n"
             f"📉 RAM total: {humanize.naturalsize(memory.total)}\n"
