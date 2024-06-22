@@ -1,0 +1,34 @@
+{
+    "// whitelist.py": "Traduzioni per whitelist.py",
+    "user_whitelisted": "L'utente {user_id} è già nella whitelist.",
+    "user_added_whitelist": "Utente {user_id} aggiunto alla whitelist.",
+    "user_not_in_whitelist": "L'utente {user_id} non è nella whitelist.",
+    "user_removed_whitelist": "Utente {user_id} rimosso dalla whitelist.",
+    "blocked_reported": "Sei stato bloccato e segnalato per spam.",
+    "warning_message": "Avvertimento {current_warning}/3: Non puoi contattare questo utente. Per favore, smetti di inviare messaggi, altrimenti sarai bloccato.",
+
+    "// infouser.py": "Traduzioni per infouser.py",
+    "command_in_groups_only": "Questo comando funziona solo nei gruppi.",
+    "mention_or_reply_user": "Devi rispondere al messaggio di un utente o menzionare l'utente per usare questo comando.",
+    "about_user": "Informazioni su {first_name}:",
+    "user_id": "ID: {user_id}",
+    "user_name": "Nome: {first_name} {last_name}",
+    "user_username": "Username: @{username}",
+    "user_datacenter": "Datacenter: {datacenter}",
+
+    "// leave.py": "Traduzioni per leave.py",
+    "left_group": "Ho lasciato il gruppo.",
+    "command_groups_only": "Questo comando può essere usato solo nei gruppi.",
+
+    "// main.py": "Traduzioni per main.py",
+    "userbot_started": "Userbot avviato!",
+    "userbot_disconnected_cancelled_error": "Userbot disconnesso a causa di un'eccezione CancelledError.",
+    "error_occurred": "Si è verificato un errore: {error}",
+    "abort_signal_received": "Segnale di interruzione ricevuto. Chiusura del Userbot...",
+
+    "// video_downloader.py": "Traduzioni per video_downloader.py",
+    "video": "Video: '{video_title}'",
+    "video_downloaded_successfully": "Video '{video_title}' scaricato con successo! Invio...",
+    "error_downloading_video": "Errore nel download del video: {error}"
+
+}

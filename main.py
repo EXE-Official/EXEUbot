@@ -6,6 +6,7 @@ import traceback
 import asyncio
 import signal
 import logging
+from translations import translations
 
 logging.basicConfig(
     level=logging.WARN,
@@ -24,7 +25,7 @@ def load_commands(client):
                 module.register(client)
 
 async def main():
-    # Read credentials from config.ini file
+    # Leggi le credenziali dal file config.ini
     config = configparser.ConfigParser()
     config.read('config.ini')
     api_id = config['telegram']['api_id']
@@ -36,16 +37,16 @@ async def main():
     try:
         await client.start()
         load_commands(client)
-        print("Userbot started!")
+        print(translations['userbot_started'])
         await client.run_until_disconnected()
     except asyncio.CancelledError:
-        print("Userbot disconnected due to a CancelledError exception.")
+        print(translations['userbot_disconnected_cancelled_error'])
     except Exception as e:
         traceback.print_exc()
-        print(f"An error occurred: {str(e)}")
+        print(translations['error_occurred'].format(error=str(e)))
 
 def handle_signal(signum, frame):
-    print("Abort signal received. closing the Userbot...")
+    print(translations['abort_signal_received'])
     asyncio.get_event_loop().stop()
 
 if __name__ == '__main__':

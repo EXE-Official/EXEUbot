@@ -1,6 +1,7 @@
 from telethon import events
 from telethon.tl.functions.contacts import BlockRequest
 import commands.database as db
+from translations import translations
 
 def register(client):
     db.initialize_database()
@@ -16,12 +17,12 @@ def register(client):
                 user_id = user.id
             
             if db.is_whitelisted(user_id):
-                await event.edit(f"User {user_id} is already in the whitelist.")
+                await event.edit(translations['user_whitelisted'].format(user_id=user_id))
             else:
                 db.add_to_whitelist(user_id)
-                await event.reply(f"User {user_id} added to whitelist.")
+                await event.reply(translations['user_added_whitelist'].format(user_id=user_id))
         except Exception as e:
-            await event.reply(f"Error: {str(e)}")
+            await event.reply(translations['error_occurred'].format(error=str(e)))
 
     @client.on(events.NewMessage(pattern=r'^\.rmwl(?: |$)(.*)', outgoing=True))
     async def remove_whitelist(event):
@@ -35,11 +36,11 @@ def register(client):
             
             if db.is_whitelisted(user_id):
                 db.remove_from_whitelist(user_id)
-                await event.reply(f"User {user_id} removed from whitelist.")
+                await event.reply(translations['user_removed_whitelist'].format(user_id=user_id))
             else:
-                await event.edit(f"User {user_id} is not in the whitelist.")
+                await event.edit(translations['user_not_in_whitelist'].format(user_id=user_id))
         except Exception as e:
-            await event.reply(f"Error: {str(e)}")
+            await event.reply(translations['error_occurred'].format(error=str(e)))
 
     @client.on(events.NewMessage(incoming=True))
     async def handle_message(event):
@@ -55,7 +56,7 @@ def register(client):
             if warning_count >= 2:
                 await client(BlockRequest(user_id))
                 db.reset_warning_count(user_id)
-                await event.reply("You have been blocked and reported for spamming.")
+                await event.reply(translations['blocked_reported'])
             else:
                 db.increment_warning_count(user_id)
-                await event.reply(f"Warning {warning_count + 1}/3: You can't contact this user, Please, stop sending message, otherwhise you'll get blocked.")
+                await event.reply(translations['warning_message'].format(current_warning=warning_count + 1))
