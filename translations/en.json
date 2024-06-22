@@ -1,0 +1,33 @@
+{
+    "// whitelist.py": "Translations for whitelist.py",
+    "user_whitelisted": "User {user_id} is already in the whitelist.",
+    "user_added_whitelist": "User {user_id} added to whitelist.",
+    "user_not_in_whitelist": "User {user_id} is not in the whitelist.",
+    "user_removed_whitelist": "User {user_id} removed from whitelist.",
+    "blocked_reported": "You have been blocked and reported for spamming.",
+    "warning_message": "Warning {current_warning}/3: You can't contact this user. Please stop sending messages, otherwise you'll get blocked.",
+
+    "// infouser.py": "Translations for infouser.py",
+    "command_in_groups_only": "This command only works in groups.",
+    "mention_or_reply_user": "You must reply to a user's message or mention the user to use this command.",
+    "about_user": "About {first_name}:",
+    "user_id": "ID: {user_id}",
+    "user_name": "Name: {first_name} {last_name}",
+    "user_username": "Username: @{username}",
+    "user_datacenter": "Datacenter: {datacenter}",
+
+    "// leave.py": "Translations for leave.py",
+    "left_group": "I left the group.",
+    "command_groups_only": "This command can only be used in groups.",
+
+    "// main.py": "Translations for main.py",
+    "userbot_started": "Userbot started!",
+    "userbot_disconnected_cancelled_error": "Userbot disconnected due to a CancelledError exception.",
+    "error_occurred": "An error occurred: {error}",
+    "abort_signal_received": "Abort signal received. Closing the Userbot...",
+
+    "// video_downloader.py": "Translations for video_downloader.py",
+    "video": "Video: '{video_title}'",
+    "video_downloaded_successfully": "Video '{video_title}' downloaded successfully! Sending...",
+    "error_downloading_video": "Error downloading video: {error}"
+}

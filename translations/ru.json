@@ -1,0 +1,33 @@
+{
+    "// whitelist.py": "Переводы для whitelist.py",
+    "user_whitelisted": "Пользователь {user_id} уже в белом списке.",
+    "user_added_whitelist": "Пользователь {user_id} добавлен в белый список.",
+    "user_not_in_whitelist": "Пользователь {user_id} не в белом списке.",
+    "user_removed_whitelist": "Пользователь {user_id} удален из белого списка.",
+    "blocked_reported": "Вы были заблокированы и сообщены за спам.",
+    "warning_message": "Предупреждение {current_warning}/3: Вы не можете связаться с этим пользователем. Пожалуйста, прекратите отправлять сообщения, иначе вы будете заблокированы.",
+
+    "// infouser.py": "Переводы для infouser.py",
+    "command_in_groups_only": "Эта команда работает только в группах.",
+    "mention_or_reply_user": "Вы должны ответить на сообщение пользователя или упомянуть пользователя, чтобы использовать эту команду.",
+    "about_user": "О {first_name}:",
+    "user_id": "ID: {user_id}",
+    "user_name": "Имя: {first_name} {last_name}",
+    "user_username": "Имя пользователя: @{username}",
+    "user_datacenter": "Датацентр: {datacenter}",
+
+    "// leave.py": "Переводы для leave.py",
+    "left_group": "Я покинул группу.",
+    "command_groups_only": "Эту команду можно использовать только в группах.",
+
+    "// main.py": "Переводы для main.py",
+    "userbot_started": "Userbot запущен!",
+    "userbot_disconnected_cancelled_error": "Userbot отключен из-за исключения CancelledError.",
+    "error_occurred": "Произошла ошибка: {error}",
+    "abort_signal_received": "Получен сигнал прерывания. Закрытие Userbot...",
+
+    "// video_downloader.py": "Переводы для video_downloader.py",
+    "video": "Видео: '{video_title}'",
+    "video_downloaded_successfully": "Видео '{video_title}' успешно загружено! Отправка...",
+    "error_downloading_video": "Ошибка при загрузке видео: {error}"
+}

@@ -1,7 +1,7 @@
 import os
 from telethon import TelegramClient, events
 import yt_dlp as youtube_dl
-
+from translations import translations
 
 async def download_video(event, url):
     try:
@@ -16,16 +16,16 @@ async def download_video(event, url):
             video_title = info_dict.get('title', 'video')
             file_path = ydl.prepare_filename(info_dict)
 
-        await event.reply(f"Video '{video_title}' downloaded successfully! Sending...")
+        await event.reply(translations['video_downloaded_successfully'].format(video_title=video_title))
         
         
-        await event.client.send_file(event.chat_id, file_path, caption=f"Video: {video_title}")
+        await event.client.send_file(event.chat_id, file_path, caption=f"{translations['video'].format(video_title=video_title)}")
         
         
         os.remove(file_path)
 
     except Exception as e:
-        await event.reply(f"Error downloading video: {str(e)}")
+        await event.reply(translations['error_downloading_video'].format(error=str(e)))
         print(str(e))
 
 def register(client):
