@@ -1,20 +1,39 @@
 ﻿# EXEUbot
+```
+      ___           ___           ___           ___           ___           ___           ___     
+     /\  \         |\__\         /\  \         /\__\         /\  \         /\  \         /\  \    
+    /::\  \        |:|  |       /::\  \       /:/  /        /::\  \       /::\  \        \:\  \   
+   /:/\:\  \       |:|  |      /:/\:\  \     /:/  /        /:/\:\  \     /:/\:\  \        \:\  \  
+  /::\~\:\  \      |:|__|__   /::\~\:\  \   /:/  /  ___   /::\~\:\__\   /:/  \:\  \       /::\  \ 
+ /:/\:\ \:\__\ ____/::::\__\ /:/\:\ \:\__\ /:/__/  /\__\ /:/\:\ \:|__| /:/__/ \:\__\     /:/\:\__\
+ \:\~\:\ \/__/ \::::/~~/~    \:\~\:\ \/__/ \:\  \ /:/  / \:\~\:\/:/  / \:\  \ /:/  /    /:/  \/__/
+  \:\ \:\__\    ~~|:|~~|      \:\ \:\__\    \:\  /:/  /   \:\ \::/  /   \:\  /:/  /    /:/  /     
+   \:\ \/__/      |:|  |       \:\ \/__/     \:\/:/  /     \:\/:/  /     \:\/:/  /     \/__/      
+    \:\__\        |:|  |        \:\__\        \::/  /       \::/__/       \::/  /                 
+     \/__/         \|__|         \/__/         \/__/         ~~            \/__/
+```
+
+
+
 A free and open-source Telegram userbot based on Telethon and fully modular
 
 # WARNING:
 
-> ## USE OF USERBOT ON TELEGRAM IS PROHIBITED AND MAY CAUSE THE BANNING OF THE ACCOUNT, I DO NOT ASSUME ANY RESPONSIBILITY, THIS PROJECT IS FOR EDUCATIONAL PURPOSES ONLY.
+> [!CAUTION]
+> USE OF USERBOT ON TELEGRAM IS PROHIBITED AND MAY CAUSE THE BANNING OF THE ACCOUNT, I DO NOT ASSUME ANY RESPONSIBILITY, THIS PROJECT IS FOR EDUCATIONAL PURPOSES ONLY.
 
-# WARNING 2:
-
-> ## IF YOU DO NOT KNOW HOW TO PROGRAM, I DO NOT RECOMMEND YOU TO CONTINUE, USING THIS USERBOT REQUIRES SOME KNOWLEDGE OF PYTHON AND THE TELETHON LIBRARY, YOU CAN CONTINUE BUT AT YOUR OWN RISK
-
+> [!CAUTION]
+> IF YOU DO NOT KNOW HOW TO PROGRAM, I DO NOT RECOMMEND YOU TO CONTINUE, USING THIS USERBOT REQUIRES SOME KNOWLEDGE OF PYTHON AND THE TELETHON LIBRARY, YOU CAN CONTINUE BUT AT YOUR OWN RISK
 
 ## Installation:
 
     git clone https://github.com/Elxes04/EXEUbot
     cd EXEUbot
     pip install -r requirments.txt
+
+> [!TIP]
+> I recommend setting up an environment using [venv](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+
 
 ## Configuration:
 
@@ -35,6 +54,6 @@ A free and open-source Telegram userbot based on Telethon and fully modular
 
 ## Roadmap (not in order):
 
- - Multi-Lang support (i need someone that can translate other language)
- - Plugins repository (might be added very soon)
+ - [x] Multi-Lang support (i need someone that can translate other language)
+ - [ ] Plugins repository (might be added very soon)
 
