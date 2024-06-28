@@ -32,6 +32,10 @@
     "error_downloading_video": "Error downloading video: {error}",
 
     "// copy.py": "Translations for copy.py",
-    "copy_successfully": "Account successfully cloned"
+    "copy_successfully": "Account successfully cloned",
+
+    "// dellog.py": "Translations for dellog.py",
+    "dellog_successfully": "The log file has been successfully deleted.",
+    "dellog_missing": "The log file is missing."
 
 }
