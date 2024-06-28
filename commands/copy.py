@@ -3,6 +3,7 @@ from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
+from translations import translations
 
 async def copy_info(event, client):
     try:
@@ -33,10 +34,10 @@ async def copy_info(event, client):
 
         os.remove(profile_photo)
         
-        await event.reply("Information copied successfully!")
+        await event.reply(translations['copy_successfully'])
 
     except Exception as e:
-        await event.reply(f"An error occurred: {str(e)}")
+        await event.reply(translations['error_occurred'].format(error=str(e)))
 
 def register(client):
     @client.on(events.NewMessage(pattern=r'^\.copy\s+(\S+)$', outgoing=True))
