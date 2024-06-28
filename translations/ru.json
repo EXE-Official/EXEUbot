@@ -32,6 +32,12 @@
     "error_downloading_video": "Ошибка при загрузке видео: {error}",
 
     "// copy.py": "Переводы для copy.py",
-    "copy_successfully": "Аккаунт успешно клонирован"
+    "copy_successfully": "Аккаунт успешно клонирован",
+
+    "// dellog.py": "Переводы для dellog.py",
+    "dellog_successfully": "Файл журнала успешно удален.",
+    "dellog_missing": "Файл журнала отсутствует."
+
+
 
 }
