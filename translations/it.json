@@ -29,6 +29,10 @@
     "// video_downloader.py": "Traduzioni per video_downloader.py",
     "video": "Video: '{video_title}'",
     "video_downloaded_successfully": "Video '{video_title}' scaricato con successo! Invio...",
-    "error_downloading_video": "Errore nel download del video: {error}"
+    "error_downloading_video": "Errore nel download del video: {error}",
+
+    "// copy.py": "Traduzioni per copy.py",
+    "copy_successfully": "Account clonato con successo"
+
 
 }
