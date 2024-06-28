@@ -29,5 +29,9 @@
     "// video_downloader.py": "Переводы для video_downloader.py",
     "video": "Видео: '{video_title}'",
     "video_downloaded_successfully": "Видео '{video_title}' успешно загружено! Отправка...",
-    "error_downloading_video": "Ошибка при загрузке видео: {error}"
+    "error_downloading_video": "Ошибка при загрузке видео: {error}",
+
+    "// copy.py": "Переводы для copy.py",
+    "copy_successfully": "Аккаунт успешно клонирован"
+
 }

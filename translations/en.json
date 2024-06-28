@@ -29,5 +29,9 @@
     "// video_downloader.py": "Translations for video_downloader.py",
     "video": "Video: '{video_title}'",
     "video_downloaded_successfully": "Video '{video_title}' downloaded successfully! Sending...",
-    "error_downloading_video": "Error downloading video: {error}"
+    "error_downloading_video": "Error downloading video: {error}",
+
+    "// copy.py": "Translations for copy.py",
+    "copy_successfully": "Account successfully cloned"
+
 }
