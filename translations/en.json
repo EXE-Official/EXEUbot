@@ -36,6 +36,12 @@
 
     "// dellog.py": "Translations for dellog.py",
     "dellog_successfully": "The log file has been successfully deleted.",
-    "dellog_missing": "The log file is missing."
+    "dellog_missing": "The log file is missing.",
+
+    "// dm.py": "Translations for dm.py",
+    "provide_username_dm": "Please, provide a username and a message.",
+    "user_not_found": "Failed to find a user. Please provide a valid username.",
+    "message_sent": "Message sent to @{username}!"
+
 
 }
