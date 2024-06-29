@@ -1,3 +1,4 @@
+
 ﻿# EXEUbot
 ```
       ___           ___           ___           ___           ___           ___           ___     
@@ -56,4 +57,10 @@ A free and open-source Telegram userbot based on Telethon and fully modular
 
  - [x] Multi-Lang support (i need someone that can translate other language)
  - [ ] Plugins repository (might be added very soon)
+
+## Special Contributors:
+
+@NoEscape-EXE (translations, improvements and bug fixes) 
+
+
 
