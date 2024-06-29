@@ -60,7 +60,7 @@ A free and open-source Telegram userbot based on Telethon and fully modular
 
 ## Special Contributors:
 
-- @NoEscape-EXE (translations, improvements and bug fixes) 
+@NoEscape-EXE (translations, improvements and bug fixes) 
 
 
 
