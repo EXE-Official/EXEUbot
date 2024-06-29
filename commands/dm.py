@@ -1,9 +1,10 @@
 from telethon import events
+from translations import translations
 
 async def send_dm(event, client):
     text = event.text.split(maxsplit=2)
     if len(text) < 3:
-        await event.respond("Please provide a username and a message.")
+        await event.respond(translations['provide_username_dm'])
         return
 
     username = text[1].replace("@", "")  
@@ -12,15 +13,14 @@ async def send_dm(event, client):
     try:
         user = await client.get_entity(username)
     except Exception:
-        await event.respond("Failed to find the user. Please provide a valid username.")
+        await event.respond(translations['user_not_found'])
         return
 
     try:
         await client.send_message(user, dm_message)  
-        await event.respond(f"Message sent to @{username}!")
+        await event.respond(translations['message_sent'])
     except Exception as e:
-        print(e)
-        await event.respond("Failed to send the DM. Apologies!")
+        await event.respond(translations['error_occurred'].format(error=str(e)))
 
 def register(client):
     @client.on(events.NewMessage(pattern=r'^\.dm\s+\S+\s+.+$', outgoing=True))
