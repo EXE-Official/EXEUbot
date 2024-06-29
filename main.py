@@ -25,7 +25,7 @@ def load_commands(client):
                 module.register(client)
 
 async def main():
-    # Leggi le credenziali dal file config.ini
+    # Read credentials from config.ini file
     config = configparser.ConfigParser()
     config.read('config.ini')
     api_id = config['telegram']['api_id']
