@@ -1,0 +1,45 @@
+{
+    "// whitelist.py": "Übersetzungen für whitelist.py",
+    "user_whitelisted": "Der Benutzer {user_id} ist bereits auf der Whitelist.",
+    "user_added_whitelist": "Benutzer {user_id} zur Whitelist hinzugefügt.",
+    "user_not_in_whitelist": "Der Benutzer {user_id} ist nicht auf der Whitelist.",
+    "user_removed_whitelist": "Benutzer {user_id} von der Whitelist entfernt.",
+    "blocked_reported": "Du wurdest blockiert und wegen Spam gemeldet.",
+    "warning_message": "Warnung {current_warning}/3: Du kannst diesen Benutzer nicht kontaktieren. Bitte höre auf, Nachrichten zu senden, sonst wirst du blockiert.",
+
+    "// infouser.py": "Übersetzungen für infouser.py",
+    "command_in_groups_only": "Dieser Befehl funktioniert nur in Gruppen.",
+    "mention_or_reply_user": "Du musst auf die Nachricht eines Benutzers antworten oder den Benutzer erwähnen, um diesen Befehl zu verwenden.",
+    "about_user": "Informationen über {first_name}:",
+    "user_id": "ID: {user_id}",
+    "user_name": "Name: {first_name} {last_name}",
+    "user_username": "Benutzername: @{username}",
+    "user_datacenter": "Rechenzentrum: {datacenter}",
+
+    "// leave.py": "Übersetzungen für leave.py",
+    "left_group": "Ich habe die Gruppe verlassen.",
+    "command_groups_only": "Dieser Befehl kann nur in Gruppen verwendet werden.",
+
+    "// main.py": "Übersetzungen für main.py",
+    "userbot_started": "Userbot gestartet!",
+    "userbot_disconnected_cancelled_error": "Userbot wegen einer CancelledError-Ausnahme getrennt.",
+    "error_occurred": "Ein Fehler ist aufgetreten: {error}",
+    "abort_signal_received": "Abbruchsignal erhalten. Userbot wird geschlossen...",
+
+    "// video_downloader.py": "Übersetzungen für video_downloader.py",
+    "video": "Video: '{video_title}'",
+    "video_downloaded_successfully": "Video '{video_title}' erfolgreich heruntergeladen! Senden...",
+    "error_downloading_video": "Fehler beim Herunterladen des Videos: {error}",
+
+    "// copy.py": "Übersetzungen für copy.py",
+    "copy_successfully": "Konto erfolgreich geklont",
+
+    "// dellog.py": "Übersetzungen für dellog.py",
+    "dellog_successfully": "Die Protokolldatei wurde erfolgreich gelöscht.",
+    "dellog_missing": "Die Protokolldatei fehlt.",
+
+    "// dm.py": "Übersetzungen für dm.py",
+    "provide_username_dm": "Bitte gib einen Benutzernamen und eine Nachricht an.",
+    "user_not_found": "Benutzer nicht gefunden, bitte gib einen gültigen Benutzernamen an.",
+    "message_sent": "Nachricht an @{username} gesendet!"
+}
