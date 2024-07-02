@@ -1,0 +1,45 @@
+{
+    "// whitelist.py": "Tłumaczenia dla whitelist.py",
+    "user_whitelisted": "Użytkownik {user_id} jest już na białej liście.",
+    "user_added_whitelist": "Użytkownik {user_id} dodany do białej listy.",
+    "user_not_in_whitelist": "Użytkownik {user_id} nie jest na białej liście.",
+    "user_removed_whitelist": "Użytkownik {user_id} usunięty z białej listy.",
+    "blocked_reported": "Zostałeś zablokowany i zgłoszony za spam.",
+    "warning_message": "Ostrzeżenie {current_warning}/3: Nie możesz kontaktować się z tym użytkownikiem. Proszę, przestań wysyłać wiadomości, w przeciwnym razie zostaniesz zablokowany.",
+
+    "// infouser.py": "Tłumaczenia dla infouser.py",
+    "command_in_groups_only": "To polecenie działa tylko w grupach.",
+    "mention_or_reply_user": "Musisz odpowiedzieć na wiadomość użytkownika lub wspomnieć użytkownika, aby użyć tego polecenia.",
+    "about_user": "Informacje o {first_name}:",
+    "user_id": "ID: {user_id}",
+    "user_name": "Imię: {first_name} {last_name}",
+    "user_username": "Nazwa użytkownika: @{username}",
+    "user_datacenter": "Centrum danych: {datacenter}",
+
+    "// leave.py": "Tłumaczenia dla leave.py",
+    "left_group": "Opuściłem grupę.",
+    "command_groups_only": "To polecenie może być używane tylko w grupach.",
+
+    "// main.py": "Tłumaczenia dla main.py",
+    "userbot_started": "Userbot uruchomiony!",
+    "userbot_disconnected_cancelled_error": "Userbot został rozłączony z powodu wyjątku CancelledError.",
+    "error_occurred": "Wystąpił błąd: {error}",
+    "abort_signal_received": "Odebrano sygnał przerwania. Zamykam Userbota...",
+
+    "// video_downloader.py": "Tłumaczenia dla video_downloader.py",
+    "video": "Wideo: '{video_title}'",
+    "video_downloaded_successfully": "Wideo '{video_title}' pobrano pomyślnie! Wysyłanie...",
+    "error_downloading_video": "Błąd podczas pobierania wideo: {error}",
+
+    "// copy.py": "Tłumaczenia dla copy.py",
+    "copy_successfully": "Konto sklonowane pomyślnie",
+
+    "// dellog.py": "Tłumaczenia dla dellog.py",
+    "dellog_successfully": "Plik dziennika został pomyślnie usunięty.",
+    "dellog_missing": "Brak pliku dziennika.",
+
+    "// dm.py": "Tłumaczenia dla dm.py",
+    "provide_username_dm": "Proszę podać nazwę użytkownika i wiadomość.",
+    "user_not_found": "Nie znaleziono użytkownika, proszę podać prawidłową nazwę użytkownika.",
+    "message_sent": "Wiadomość wysłana do @{username}!"
+}
