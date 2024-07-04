@@ -41,5 +41,20 @@
     "// dm.py": "Tłumaczenia dla dm.py",
     "provide_username_dm": "Proszę podać nazwę użytkownika i wiadomość.",
     "user_not_found": "Nie znaleziono użytkownika, proszę podać prawidłową nazwę użytkownika.",
-    "message_sent": "Wiadomość wysłana do @{username}!"
+    "message_sent": "Wiadomość wysłana do @{username}!",
+
+    "// info.py": "Tłumaczenia dla info.py",
+    "system_info_title": "ℹ️ Informacje o systemie:",
+    "os": "💻 OS",
+    "kernel": "🔳 Jądro",
+    "python_version": "🐍 Wersja Python",
+    "telethon_version": "🤖 Wersja Telethon",
+    "userbot_version": "⚙️ Wersja Userbot: ",
+    "cpu_usage": "⚡ Użycie CPU",
+    "ram_usage": "📈 Użycie RAM",
+    "ram_total": "📉 Całkowita pamięć RAM",
+    "ping": "📶 Ping",
+    "userbot_commands_link": "🤖 [Komendy Userbot](https://telegra.ph/Userbot-commands-09-11-46)",
+    "userbot_created_by": "👤 Userbot stworzony przez Elxes ©️"
+
 }
