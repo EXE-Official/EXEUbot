@@ -55,7 +55,8 @@
     "ram_total": "📉 RAM totale",
     "ping": "📶 Ping",
     "userbot_commands_link": "🤖 [Comandi Userbot](https://telegra.ph/Userbot-commands-09-11-46)",
-    "userbot_created_by": "👤 Userbot creato da Elxes ©️"
+    "userbot_created_by": "👤 Userbot creato da Elxes ©️",
 
-
+    "// delall.py": "Traduzioni per delall.py",
+    "floodwait_error": "L'account è in floodwait. Attendere {waitingtime} secondi..."
 }
