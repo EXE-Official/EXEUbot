@@ -14,7 +14,7 @@ async def delete_all_messages(event, client):
             try:
                 await client.delete_messages(chat_id, message_ids)
                 message_ids = []
-                await asyncio.sleep(1)  # Aggiungi un ritardo di 1 secondo tra le eliminazioni
+                await asyncio.sleep(1)  # Add a 1 second delay between deletes
             except FloodWaitError as e:
                 wait_time = e.seconds
                 print(translations['floodwait_error'].format(waitingtime=str(wait_time)))
@@ -22,7 +22,7 @@ async def delete_all_messages(event, client):
             except Exception as e:
                 print(translations['error_occurred'].format(error=str(e)))
     
-    # Elimina eventuali messaggi rimanenti
+    # Delete any remaining messages
     if message_ids:
         try:
             await client.delete_messages(chat_id, message_ids)
