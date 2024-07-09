@@ -19,10 +19,10 @@ A free and open-source Telegram userbot based on Telethon and fully modular
 # WARNING:
 
 > [!CAUTION]
-> USE OF USERBOT ON TELEGRAM IS PROHIBITED AND MAY CAUSE THE BANNING OF THE ACCOUNT, I DO NOT ASSUME ANY RESPONSIBILITY, THIS PROJECT IS FOR EDUCATIONAL PURPOSES ONLY.
+> USE OF USERBOT ON TELEGRAM IS PROHIBITED AND MAY CAUSE THE BANNING OF THE ACCOUNT, WE DO NOT ASSUME ANY RESPONSIBILITY, THIS PROJECT IS FOR EDUCATIONAL PURPOSES ONLY.
 
 > [!CAUTION]
-> IF YOU DO NOT KNOW HOW TO CODE, I DO NOT RECOMMEND YOU TO CONTINUE, USING THIS USERBOT REQUIRES SOME KNOWLEDGE OF PYTHON AND THE TELETHON LIBRARY, YOU CAN CONTINUE BUT AT YOUR OWN RISK
+> IF YOU DO NOT KNOW HOW TO CODE, WE DO NOT RECOMMEND YOU TO CONTINUE, USING THIS USERBOT REQUIRES SOME KNOWLEDGE OF PYTHON AND THE TELETHON LIBRARY, YOU CAN CONTINUE BUT AT YOUR OWN RISK
 
 ## Installation:
 
@@ -31,7 +31,7 @@ A free and open-source Telegram userbot based on Telethon and fully modular
     pip install -r requirments.txt
 
 > [!TIP]
-> I recommend setting up an environment using [venv](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+> We recommend setting up an environment using [venv](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 
 ## Configuration:
@@ -53,7 +53,7 @@ A free and open-source Telegram userbot based on Telethon and fully modular
 
 ## Roadmap (not in order):
 
- - [x] Multi-Lang support (i need someone that can translate other language)
+ - [x] Multi-Lang support (we need someone that can translate other language)
  - [ ] Plugins repository (might be added very soon)
 
 ## Special Contributors:
