@@ -1,0 +1,12 @@
+ipwhois
+telethon
+cryptg
+humanize
+psutil
+speedtest-cli
+requests
+urllib3
+tqdm
+faker
+qrcode
+yt_dlp
