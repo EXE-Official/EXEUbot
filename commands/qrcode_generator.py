@@ -1,6 +1,7 @@
 import qrcode
 import io
 from telethon import TelegramClient, events
+from translations import translations
 
 
 async def generate_qr(event, content):
@@ -25,7 +26,7 @@ async def generate_qr(event, content):
         await event.reply(file=bio)
         await event.delete()
     except Exception as e:
-        await event.reply(f"An error occurred while generating the QR code: {str(e)}")
+        await event.reply(translations.get('error_occurred', error=str(e)))
         print(str(e))
 
 def register(client):
