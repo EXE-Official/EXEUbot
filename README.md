@@ -1,7 +1,4 @@
-
-﻿# EXEUbot
-
-```
+﻿```
  _______   __ _____ _   _______  _____ _____ 
 |  ___\ \ / /|  ___| | | | ___ \|  _  |_   _|
 | |__  \ V / | |__ | | | | |_/ /| | | | | |  
@@ -11,7 +8,7 @@
                                              
                                              
 ```
-
+<a href="https://polar.sh/EXE-Official/EXEUbot"><img src="https://polar.sh/embed/seeks-funding-shield.svg?org=EXE-Official&repo=EXEUbot" /></a>
 
 
 A free and open-source Telegram userbot based on Telethon and fully modular
@@ -42,23 +39,16 @@ A free and open-source Telegram userbot based on Telethon and fully modular
  4. Choose a name for your app and copy "API_ID" & "API_HASH" to config.ini
  5. save and start "main.py": `python3 main.py`
 
-
-
-
-
-
-
-
-
-
 ## Roadmap (not in order):
 
  - [x] Multi-Lang support (we need someone that can translate other language)
  - [ ] Plugins repository (might be added very soon)
 
-## Special Contributors:
+## Donate:
 
-@NoEscape-EXE (translations, improvements and bug fixes) 
+This software is completely free and unrestricted. However, if you find it valuable, please consider making a donation to support our work.
+
+<a href="https://polar.sh/EXE-Official"><picture><source media="(prefers-color-scheme: dark)" srcset="https://polar.sh/embed/subscribe.svg?org=EXE-Official&label=Subscribe&darkmode"><img alt="Subscribe on Polar" src="https://polar.sh/embed/subscribe.svg?org=EXE-Official&label=Subscribe"></picture></a>
 
 
 
