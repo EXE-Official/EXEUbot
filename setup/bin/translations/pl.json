@@ -1,0 +1,23 @@
+{
+  "ask_language": "Wybierz język (en, it, ru, pl, de, fr, es): ",
+  "create_venv": "Czy chcesz utworzyć wirtualne środowisko za pomocą venv? (yes/no): ",
+  "creating_venv": "Tworzenie wirtualnego środowiska...",
+  "venv_created": "Wirtualne środowisko utworzone pomyślnie.",
+  "installing_deps": "Instalowanie zależności z requirements.txt za pomocą {pip}...",
+  "deps_installed": "Zależności zainstalowane pomyślnie.",
+  "config_telegram": "Konfigurowanie ustawień telegramu...",
+  "enter_api_id": "Wprowadź swój identyfikator API Telegram: ",
+  "enter_api_hash": "Wprowadź swój hasz API Telegram: ",
+  "config_backup": "Konfigurowanie katalogu kopii zapasowej...",
+  "enter_backup_dir": "Wprowadź katalog kopii zapasowej: ",
+  "config_language": "Konfigurowanie ustawień języka...",
+  "enter_language": "Wprowadź język (np. en, it): ",
+  "config_created": "Plik konfiguracyjny {config} utworzony pomyślnie.",
+  "starting_main": "Uruchamianie main.py...",
+  "invalid_input": "Nieprawidłowe dane wejściowe. Wprowadź 'yes' lub 'no'.",
+  "config_completed": "Konfiguracja zakończona. Teraz możesz uruchomić main.py.",
+  "already_configured": "Konfiguracja już zakończona. Zamykanie.",
+  "start_main_windows": "Aby uruchomić main.py w systemie Windows, wykonaj 'python main.py'.",
+  "start_main_unix": "Aby uruchomić main.py w systemach Unix-like, wykonaj 'python3 main.py'.",
+  "start_main_generic": "Aby uruchomić main.py, wykonaj 'python main.py'."
+}
