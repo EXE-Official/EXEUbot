@@ -8,7 +8,7 @@
                                              
                                              
 ```
-<a href="https://polar.sh/EXE-Official/EXEUbot"><img src="https://polar.sh/embed/seeks-funding-shield.svg?org=EXE-Official&repo=EXEUbot" /></a> ![GitHub Repo stars](https://img.shields.io/github/stars/EXE-Official/EXEUbot) ![GitHub forks](https://img.shields.io/github/forks/EXE-Official/EXEUbot) ![GitHub License](https://img.shields.io/github/license/EXE-Official/EXEUbot) ![GitHub contributors](https://img.shields.io/github/contributors/EXE-Official/EXEUbot)
+<a href="https://polar.sh/EXE-Official/EXEUbot"><img src="https://polar.sh/embed/seeks-funding-shield.svg?org=EXE-Official&repo=EXEUbot" /></a> ![GitHub Repo stars](https://img.shields.io/github/stars/EXE-Official/EXEUbot) ![GitHub forks](https://img.shields.io/github/forks/EXE-Official/EXEUbot) ![GitHub contributors](https://img.shields.io/github/contributors/EXE-Official/EXEUbot) ![GitHub License](https://img.shields.io/github/license/EXE-Official/EXEUbot)
 
 
 
