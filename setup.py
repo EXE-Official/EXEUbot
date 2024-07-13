@@ -22,9 +22,16 @@ def create_virtual_environment():
     print(translations["venv_created"])
 
 def install_dependencies(venv=False):
-    pip_executable = os.path.join('env', 'bin', 'pip') if venv else sys.executable
+    if venv:
+        pip_executable = os.path.join('env', 'Scripts', 'pip') if sys.platform.startswith('win') else os.path.join('env', 'bin', 'pip')
+    else:
+        pip_executable = sys.executable
+
     print(translations["installing_deps"].format(pip=pip_executable))
-    subprocess.check_call([pip_executable, 'install', '-r', 'requirements.txt'])
+    if venv:
+        subprocess.check_call([pip_executable, 'install', '-r', 'requirements.txt'])
+    else:
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', 'requirements.txt'])
     print(translations["deps_installed"])
 
 def create_config_file():
@@ -71,9 +78,7 @@ def main():
         with open(FLAG_FILE, 'w') as f:
             f.write('This is a flag file to indicate the first run.')
 
-
         print(translations["config_completed"])
-
 
         if sys.platform.startswith('win'):
             print(translations["start_main_windows"])
