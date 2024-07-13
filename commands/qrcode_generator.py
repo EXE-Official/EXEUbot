@@ -3,7 +3,6 @@ import io
 from telethon import TelegramClient, events
 from translations import translations
 
-
 async def generate_qr(event, content):
     try:
         
@@ -21,7 +20,6 @@ async def generate_qr(event, content):
         bio.name = 'qrcode.png'
         img.save(bio, 'PNG')
         bio.seek(0)
-
         
         await event.reply(file=bio) 
         await event.delete()
