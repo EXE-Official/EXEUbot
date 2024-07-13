@@ -23,7 +23,7 @@ async def generate_qr(event, content):
         bio.seek(0)
 
         
-        await event.reply(file=bio)
+        await event.reply(file=bio) 
         await event.delete()
     except Exception as e:
         await event.reply(translations.get('error_occurred', error=str(e)))
