@@ -35,11 +35,7 @@ A free and open-source Telegram userbot based on Telethon and fully modular
 
 ## Configuration:
 
- 1. Go to https://my.telegram.org
- 2. Login with your number
- 3. Go to "API Development Tool"
- 4. Choose a name for your app and copy "API_ID" & "API_HASH" to config.ini
- 5. save and start "main.py": `python3 main.py`
+ See in the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Configuration) 
 
 ## Roadmap (not in order):
 
