@@ -58,5 +58,12 @@
     "userbot_created_by": "👤 Userbot erstellt von Elxes ©️",
 
     "// delall.py": "Übersetzungen für delall.py",
-    "floodwait_error": "Das Konto ist im Floodwait. Warte {waitingtime} Sekunden..."
+    "floodwait_error": "Das Konto ist im Floodwait. Warte {waitingtime} Sekunden...",
+
+    "// backup.py": "Übersetzungen für backup.py",
+    "backup_complete": "Informationssicherung abgeschlossen!",
+    "backup_error": "Beim Sichern ist ein Fehler aufgetreten: {error}",
+    "no_backup_files": "Keine Sicherungsdateien gefunden.",
+    "restore_complete": "Wiederherstellung abgeschlossen!",
+    "restore_error": "Beim Wiederherstellen ist ein Fehler aufgetreten: {error}"
 }

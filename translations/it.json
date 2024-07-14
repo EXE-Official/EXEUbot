@@ -58,5 +58,12 @@
     "userbot_created_by": "👤 Userbot creato da Elxes ©️",
 
     "// delall.py": "Traduzioni per delall.py",
-    "floodwait_error": "L'account è in floodwait. Attendere {waitingtime} secondi..."
+    "floodwait_error": "L'account è in floodwait. Attendere {waitingtime} secondi...",
+
+    "// backup.py": "Traduzioni per backup.py",
+    "backup_complete": "Backup delle informazioni completato!",
+    "backup_error": "Si è verificato un errore durante il backup: {error}",
+    "no_backup_files": "Nessun file di backup trovato.",
+    "restore_complete": "Ripristino completato!",
+    "restore_error": "Si è verificato un errore durante il ripristino: {error}"
 }
