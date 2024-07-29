@@ -43,6 +43,11 @@ pip install -r requirements.txt
 > **TIP**  
 > We recommend setting up a virtual environment using [venv](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/).
 
+## Development branch
+
+> [!WARNING]
+> THIS IS THE STABLE BRANCH, IF YOU WANT TO TEST THE DEVELOPMENT VERSIONS, GO TO `development` BRANCH, BUT KEEP IN MIND THAT THESE VERSIONS MIGHT HAVE SERIOUS BUGS, TRY THEM AT YOUR RISK!
+
 ## Configuration
 
 See the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Configuration) for detailed configuration instructions.
