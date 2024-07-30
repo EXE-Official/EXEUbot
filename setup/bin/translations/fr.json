@@ -19,5 +19,7 @@
   "already_configured": "Configuration déjà terminée. Fermeture.",
   "start_main_windows": "Pour démarrer main.py sous Windows, exécutez 'python main.py'.",
   "start_main_unix": "Pour démarrer main.py sur les systèmes Unix-like, exécutez 'python3 main.py'.",
-  "start_main_generic": "Pour démarrer main.py, exécutez 'python main.py'."
+  "start_main_generic": "Pour démarrer main.py, exécutez 'python main.py'.",
+  "ask_whitelist_enabled": "Voulez-vous activer la fonction de liste blanche? (oui/non): ",
+  "ask_message_limit": "Entrez le nombre de messages qu'un utilisateur peut envoyer avant d'être bloqué: "
 }

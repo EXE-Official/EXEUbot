@@ -19,5 +19,7 @@
   "already_configured": "Konfiguracja już zakończona. Zamykanie.",
   "start_main_windows": "Aby uruchomić main.py w systemie Windows, wykonaj 'python main.py'.",
   "start_main_unix": "Aby uruchomić main.py w systemach Unix-like, wykonaj 'python3 main.py'.",
-  "start_main_generic": "Aby uruchomić main.py, wykonaj 'python main.py'."
+  "start_main_generic": "Aby uruchomić main.py, wykonaj 'python main.py'.",
+  "ask_whitelist_enabled": "Czy chcesz włączyć funkcję listy białej? (tak/nie): ",
+  "ask_message_limit": "Wprowadź liczbę wiadomości, które użytkownik może wysłać przed zablokowaniem: "
 }
