@@ -43,8 +43,10 @@ See the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Configuration) for d
 - [x] Multi-Language support (we need translators for other languages)
 - [ ] Plugins repository (coming soon)
 
-## Donate
+## Donate & Star
 
-This software is completely free and open-source. If you find it valuable, please consider making a donation to support our work.
+This software is completely free and open-source. If you find it valuable, please consider making a donation and to star the repo to support our work.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=EXE-Official/EXEUbot&type=Date)](https://star-history.com/#EXE-Official/EXEUbot&Date)
 
 <a href="https://polar.sh/EXE-Official"><picture><source media="(prefers-color-scheme: dark)" srcset="https://polar.sh/embed/subscribe.svg?org=EXE-Official&label=Subscribe&darkmode"><img alt="Subscribe on Polar" src="https://polar.sh/embed/subscribe.svg?org=EXE-Official&label=Subscribe"></picture></a>
