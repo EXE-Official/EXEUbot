@@ -19,5 +19,7 @@
   "already_configured": "Konfiguration bereits abgeschlossen. Beenden.",
   "start_main_windows": "Um main.py unter Windows zu starten, führe 'python main.py' aus.",
   "start_main_unix": "Um main.py auf Unix-ähnlichen Systemen zu starten, führe 'python3 main.py' aus.",
-  "start_main_generic": "Um main.py zu starten, führe 'python main.py' aus."
+  "start_main_generic": "Um main.py zu starten, führe 'python main.py' aus.",
+  "ask_whitelist_enabled": "Möchten Sie die Whitelist-Funktion aktivieren? (ja/nein): ",
+  "ask_message_limit": "Geben Sie die Anzahl der Nachrichten ein, die ein Benutzer senden kann, bevor er blockiert wird: "
 }
