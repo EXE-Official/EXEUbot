@@ -15,9 +15,31 @@ def load_translations(language):
 def get_user_input(prompt):
     return input(prompt).strip()
 
+def install_venv_package():
+    python_version = f"python{sys.version_info.major}.{sys.version_info.minor}"
+
+    if sys.platform.startswith('win'):
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'virtualenv'])
+    elif sys.platform.startswith('linux'):
+        try:
+            subprocess.check_call(['sudo', 'apt', 'update'])
+            subprocess.check_call(['sudo', 'apt', 'install', f'{python_version}-venv'])
+        except subprocess.CalledProcessError:
+            print(translations["venv_install_failed"])
+            raise
+    elif sys.platform.startswith('darwin'):
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'virtualenv'])
+    else:
+        raise OSError("Unsupported operating system for automatic virtualenv installation")
+
 def create_virtual_environment():
     print(translations["creating_venv"])
-    subprocess.check_call([sys.executable, '-m', 'venv', 'env'])
+    try:
+        subprocess.check_call([sys.executable, '-m', 'venv', 'env'])
+    except subprocess.CalledProcessError:
+        print(translations["venv_not_found"])
+        install_venv_package()
+        subprocess.check_call([sys.executable, '-m', 'venv', 'env'])
     print(translations["venv_created"])
 
 def install_dependencies(venv=False):
