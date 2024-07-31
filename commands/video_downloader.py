@@ -5,10 +5,14 @@ from translations import translations
 
 async def download_video(event, url):
     try:
+        # Path to the cookies file
+        cookies_path = os.path.join(os.path.dirname(__file__), '..', 'cookies', 'cookies.txt')
+
         ydl_opts = {
             'outtmpl': 'downloads/%(title)s.%(ext)s',
             'format': 'best',
             'noplaylist': True,
+            'cookiefile': cookies_path,
         }
 
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
@@ -18,9 +22,7 @@ async def download_video(event, url):
 
         await event.reply(translations['video_downloaded_successfully'].format(video_title=video_title))
         
-        
         await event.client.send_file(event.chat_id, file_path, caption=f"{translations['video'].format(video_title=video_title)}")
-        
         
         os.remove(file_path)
 
