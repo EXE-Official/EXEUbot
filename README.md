@@ -45,7 +45,8 @@ See the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Configuration) for d
 
 ## Donate & Star
 
-This software is completely free and open-source. If you find it valuable, please consider making a donation and to star the repo to support our work.
+> [!NOTE]
+> This software is completely free and open-source. If you find it valuable, please consider making a donation and to star the repo to support our work.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=EXE-Official/EXEUbot&type=Date)](https://star-history.com/#EXE-Official/EXEUbot&Date)
 
