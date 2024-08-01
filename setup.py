@@ -4,7 +4,6 @@ import os
 import configparser
 import json
 
-FLAG_FILE = 'first_run.flag'
 CONFIG_FILE = 'config.ini'
 TRANSLATIONS_DIR = 'setup/bin/translations'
 
@@ -16,9 +15,31 @@ def load_translations(language):
 def get_user_input(prompt):
     return input(prompt).strip()
 
+def install_venv_package():
+    python_version = f"python{sys.version_info.major}.{sys.version_info.minor}"
+
+    if sys.platform.startswith('win'):
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'virtualenv'])
+    elif sys.platform.startswith('linux'):
+        try:
+            subprocess.check_call(['sudo', 'apt', 'update'])
+            subprocess.check_call(['sudo', 'apt', 'install', f'{python_version}-venv'])
+        except subprocess.CalledProcessError:
+            print(translations["venv_install_failed"])
+            raise
+    elif sys.platform.startswith('darwin'):
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'virtualenv'])
+    else:
+        raise OSError("Unsupported operating system for automatic virtualenv installation")
+
 def create_virtual_environment():
     print(translations["creating_venv"])
-    subprocess.check_call([sys.executable, '-m', 'venv', 'env'])
+    try:
+        subprocess.check_call([sys.executable, '-m', 'venv', 'env'])
+    except subprocess.CalledProcessError:
+        print(translations["venv_not_found"])
+        install_venv_package()
+        subprocess.check_call([sys.executable, '-m', 'venv', 'env'])
     print(translations["venv_created"])
 
 def install_dependencies(venv=False):
@@ -47,9 +68,20 @@ def create_config_file():
     print(translations["config_language"])
     lang = get_user_input(translations["enter_language"])
 
+    print(translations["ask_whitelist_enabled"])
+    whitelist_enabled = get_user_input(translations["ask_whitelist_enabled"]).lower()
+
+    if whitelist_enabled == 'yes':
+        whitelist_enabled = True
+        message_limit = get_user_input(translations["ask_message_limit"])
+    else:
+        whitelist_enabled = False
+        message_limit = 3
+
     config['telegram'] = {'api_id': api_id, 'api_hash': api_hash}
     config['var'] = {'backup_dir': backup_dir}
     config['language'] = {'lang': lang}
+    config['whitelist'] = {'enabled': str(whitelist_enabled), 'message_limit': str(message_limit)}
 
     with open(CONFIG_FILE, 'w') as configfile:
         config.write(configfile)
@@ -62,32 +94,26 @@ def main():
     lang = get_user_input("Select language (en, it, ru, pl, de, fr, es): ").lower()
     translations = load_translations(lang)
 
-    if not os.path.exists(FLAG_FILE):
-        setup_venv = get_user_input(translations["create_venv"]).lower()
+    setup_venv = get_user_input(translations["create_venv"]).lower()
 
-        if setup_venv == 'yes':
-            create_virtual_environment()
-            install_dependencies(venv=True)
-        elif setup_venv == 'no':
-            install_dependencies()
-        else:
-            print(translations["invalid_input"])
-            return
-
-        create_config_file()
-        with open(FLAG_FILE, 'w') as f:
-            f.write('This is a flag file to indicate the first run.')
-
-        print(translations["config_completed"])
-
-        if sys.platform.startswith('win'):
-            print(translations["start_main_windows"])
-        elif sys.platform.startswith('linux') or sys.platform.startswith('darwin'):
-            print(translations["start_main_unix"])
-        else:
-            print(translations["start_main_generic"])
+    if setup_venv == 'yes':
+        create_virtual_environment()
+        install_dependencies(venv=True)
+    elif setup_venv == 'no':
+        install_dependencies()
     else:
-        print(translations["already_configured"])
+        print(translations["invalid_input"])
+        return
+
+    create_config_file()
+    print(translations["config_completed"])
+
+    if sys.platform.startswith('win'):
+        print(translations["start_main_windows"])
+    elif sys.platform.startswith('linux') or sys.platform.startswith('darwin'):
+        print(translations["start_main_unix"])
+    else:
+        print(translations["start_main_generic"])
 
 if __name__ == '__main__':
     main()

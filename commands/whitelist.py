@@ -5,6 +5,12 @@ import commands.database as db
 import configparser
 from translations import translations
 
+<<<<<<< HEAD
+config = configparser.ConfigParser()
+config_path = os.path.join(os.path.dirname(__file__), '..', 'config.ini')
+config.read(config_path)
+limit_warning = int(config.get('settings', 'limit_warning', fallback=3))
+=======
 
 config = configparser.ConfigParser()
 config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config.ini')
@@ -13,6 +19,7 @@ config.read(config_path)
 
 limit_warning = int(config.get('whitelist', 'message_limit', fallback=3))
 whitelist_enabled = config.getboolean('whitelist', 'enabled', fallback=True)
+>>>>>>> main
 
 def register(client):
     if not whitelist_enabled:
@@ -67,7 +74,11 @@ def register(client):
 
             warning_count = db.get_warning_count(user_id)
 
+<<<<<<< HEAD
+            if warning_count >= 2:
+=======
             if warning_count >= limit_warning - 1:
+>>>>>>> main
                 await client(BlockRequest(user_id))
                 db.reset_warning_count(user_id)
                 await event.reply(translations['blocked_reported'])
