@@ -1,9 +1,23 @@
+import os
 from telethon import events
 from telethon.tl.functions.contacts import BlockRequest
 import commands.database as db
+import configparser
 from translations import translations
 
+
+config = configparser.ConfigParser()
+config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config.ini')
+config.read(config_path)
+
+
+limit_warning = int(config.get('whitelist', 'message_limit', fallback=3))
+whitelist_enabled = config.getboolean('whitelist', 'enabled', fallback=True)
+
 def register(client):
+    if not whitelist_enabled:
+        return
+
     db.initialize_database()
 
     @client.on(events.NewMessage(pattern=r'^\.addwl(?: |$)(.*)', outgoing=True))
@@ -15,7 +29,7 @@ def register(client):
             else:
                 user = await client.get_entity(user_id)
                 user_id = user.id
-            
+
             if db.is_whitelisted(user_id):
                 await event.edit(translations['user_whitelisted'].format(user_id=user_id))
             else:
@@ -33,7 +47,7 @@ def register(client):
             else:
                 user = await client.get_entity(user_id)
                 user_id = user.id
-            
+
             if db.is_whitelisted(user_id):
                 db.remove_from_whitelist(user_id)
                 await event.reply(translations['user_removed_whitelist'].format(user_id=user_id))
@@ -47,16 +61,16 @@ def register(client):
         if event.is_private:
             sender = await event.get_sender()
             user_id = sender.id
-            
+
             if db.is_whitelisted(user_id):
                 return  # Do nothing if the user is whitelisted
-            
+
             warning_count = db.get_warning_count(user_id)
-            
-            if warning_count >= 2:
+
+            if warning_count >= limit_warning - 1:
                 await client(BlockRequest(user_id))
                 db.reset_warning_count(user_id)
                 await event.reply(translations['blocked_reported'])
             else:
                 db.increment_warning_count(user_id)
-                await event.reply(translations['warning_message'].format(current_warning=warning_count + 1))
+                await event.reply(translations['warning_message'].format(current_warning=warning_count + 1, warning_count=limit_warning))
