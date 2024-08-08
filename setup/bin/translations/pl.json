@@ -3,10 +3,6 @@
   "create_venv": "Czy chcesz utworzyć wirtualne środowisko za pomocą venv? (yes/no): ",
   "creating_venv": "Tworzenie wirtualnego środowiska...",
   "venv_created": "Wirtualne środowisko utworzone pomyślnie.",
-  "venv_not_found": "Moduł venv nie jest dostępny. Próba instalacji virtualenv...",
-  "venv_install_failed": "Nie udało się zainstalować pakietu venv.",
-  "installing_venv": "Instalacja pakietu virtualenv...",
-  "venv_installed": "Pakiet virtualenv zainstalowany.",
   "installing_deps": "Instalowanie zależności z requirements.txt za pomocą {pip}...",
   "deps_installed": "Zależności zainstalowane pomyślnie.",
   "config_telegram": "Konfigurowanie ustawień telegramu...",
@@ -23,7 +19,5 @@
   "already_configured": "Konfiguracja już zakończona. Zamykanie.",
   "start_main_windows": "Aby uruchomić main.py w systemie Windows, wykonaj 'python main.py'.",
   "start_main_unix": "Aby uruchomić main.py w systemach Unix-like, wykonaj 'python3 main.py'.",
-  "start_main_generic": "Aby uruchomić main.py, wykonaj 'python main.py'.",
-  "ask_whitelist_enabled": "Czy chcesz włączyć funkcję listy białej? (tak/nie): ",
-  "ask_message_limit": "Wprowadź liczbę wiadomości, które użytkownik może wysłać przed zablokowaniem: "
+  "start_main_generic": "Aby uruchomić main.py, wykonaj 'python main.py'."
 }
