@@ -1,6 +1,6 @@
 @echo off
 
-:: Start the setup using Python
+:: Run setup.py
 python setup.py
 
 pause
