@@ -65,5 +65,15 @@
   "backup_error": "Beim Sichern ist ein Fehler aufgetreten: {error}",
   "no_backup_files": "Keine Sicherungsdateien gefunden.",
   "restore_complete": "Wiederherstellung abgeschlossen!",
-  "restore_error": "Beim Wiederherstellen ist ein Fehler aufgetreten: {error}"
+  "restore_error": "Beim Wiederherstellen ist ein Fehler aufgetreten: {error}",
+
+  "// weather.py": "Übersetzungen für weather.py",
+  "ask_city": "Bitte geben Sie den Namen einer Stadt an.",
+  "city_not_found": "Stadt nicht gefunden, bitte überprüfen Sie den Namen und versuchen Sie es erneut.",
+  "weather_in": "Wetter in",
+  "temperature": "🌡️ Temperatur",
+  "humidity": "💧 Luftfeuchtigkeit",
+  "wind_speed": "🌬️ Windgeschwindigkeit",
+  "description": "🔍 Beschreibung",
+  "pressure": "🔵 Druck"
 }

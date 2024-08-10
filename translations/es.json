@@ -65,5 +65,15 @@
   "backup_error": "Ocurrió un error durante la copia de seguridad: {error}",
   "no_backup_files": "No se encontraron archivos de copia de seguridad.",
   "restore_complete": "¡Restauración completada!",
-  "restore_error": "Ocurrió un error durante la restauración: {error}"
+  "restore_error": "Ocurrió un error durante la restauración: {error}",
+
+  "// weather.py": "Traducciones para weather.py",
+  "ask_city": "Por favor, especifica el nombre de una ciudad.",
+  "city_not_found": "Ciudad no encontrada, por favor verifica el nombre e intenta nuevamente.",
+  "weather_in": "El tiempo en",
+  "temperature": "🌡️ Temperatura",
+  "humidity": "💧 Humedad",
+  "wind_speed": "🌬️ Velocidad del viento",
+  "description": "🔍 Descripción",
+  "pressure": "🔵 Presión"
 }

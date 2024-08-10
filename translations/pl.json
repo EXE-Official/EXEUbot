@@ -65,5 +65,15 @@
   "backup_error": "Wystąpił błąd podczas tworzenia kopii zapasowej: {error}",
   "no_backup_files": "Nie znaleziono plików kopii zapasowej.",
   "restore_complete": "Przywracanie zakończone!",
-  "restore_error": "Wystąpił błąd podczas przywracania: {error}"
+  "restore_error": "Wystąpił błąd podczas przywracania: {error}",
+
+  "// weather.py": "Tłumaczenia dla weather.py",
+  "ask_city": "Proszę podać nazwę miasta.",
+  "city_not_found": "Nie znaleziono miasta, sprawdź nazwę i spróbuj ponownie.",
+  "weather_in": "Pogoda w",
+  "temperature": "🌡️ Temperatura",
+  "humidity": "💧 Wilgotność",
+  "wind_speed": "🌬️ Prędkość wiatru",
+  "description": "🔍 Opis",
+  "pressure": "🔵 Ciśnienie"
 }
