@@ -65,5 +65,15 @@
   "backup_error": "Si è verificato un errore durante il backup: {error}",
   "no_backup_files": "Nessun file di backup trovato.",
   "restore_complete": "Ripristino completato!",
-  "restore_error": "Si è verificato un errore durante il ripristino: {error}"
+  "restore_error": "Si è verificato un errore durante il ripristino: {error}",
+
+  "// weather.py": "Traduzioni per weather.py",
+  "ask_city": "Per favore, specifica il nome di una città.",
+  "city_not_found": "Città non trovata, controlla il nome e riprova.",
+  "weather_in": "Meteo a",
+  "temperature": "🌡️ Temperatura",
+  "humidity": "💧 Umidità",
+  "wind_speed": "🌬️ Velocità del vento",
+  "description": "🔍 Descrizione",
+  "pressure": "🔵 Pressione"
 }

@@ -65,5 +65,15 @@
   "backup_error": "An error occurred during backup: {error}",
   "no_backup_files": "No backup files found.",
   "restore_complete": "Restore complete!",
-  "restore_error": "An error occurred while restoring: {error}"
+  "restore_error": "An error occurred while restoring: {error}",
+
+  "// weather.py": "Translations for weather.py",
+  "ask_city": "Please specify a city name.",
+  "city_not_found": "City not found, please check the name and try again.",
+  "weather_in": "Weather in",
+  "temperature": "🌡️ Temperature",
+  "humidity": "💧 Humidity",
+  "wind_speed": "🌬️ Wind Speed",
+  "description": "🔍 Description",
+  "pressure": "🔵 Pressure"
 }
