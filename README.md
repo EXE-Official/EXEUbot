@@ -32,9 +32,6 @@ start "install_requirements"
 start "setup"
 ```
 
-> **TIP**
-> We recommend setting up a virtual environment using [venv](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/).
-
 ## Configuration
 
 See the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Configuration) for detailed configuration instructions.
