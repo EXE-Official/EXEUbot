@@ -25,12 +25,7 @@ A free and open-source Telegram userbot based on Telethon and fully modular.
 
 ## Installation
 
-```sh
-git clone https://github.com/Elxes04/EXEUbot
-cd EXEUbot
-start "install_requirements"
-start "setup"
-```
+See the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Installation) for installation instructions.
 
 ## Configuration
 
