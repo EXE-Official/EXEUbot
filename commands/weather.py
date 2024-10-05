@@ -1,9 +1,15 @@
+import os
 import requests
+import configparser
 from telethon import TelegramClient, events
 from translations import translations
-import os
 
-API_KEY = '# Insert the key of openweathermap.org here'
+# Read credentials from config.ini file
+config = configparser.ConfigParser()
+config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config.ini')
+config.read(config_path)
+
+API_KEY = config.get('OpenWeatherMapKey')
 
 async def get_weather(city_name):
     base_url = "http://api.openweathermap.org/data/2.5/weather?"

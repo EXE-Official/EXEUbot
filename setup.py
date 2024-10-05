@@ -42,6 +42,7 @@ def create_config_file():
     config['var'] = {'backup_dir': backup_dir}
     config['language'] = {'lang': lang}
     config['whitelist'] = {'enabled': str(whitelist_enabled), 'message_limit': str(message_limit)}
+    config['plugins'] = {'OpenWeatherMapKey': str('XXXXXXXXX')}
 
     with open(CONFIG_FILE, 'w') as configfile:
         config.write(configfile)
