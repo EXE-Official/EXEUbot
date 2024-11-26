@@ -8,7 +8,7 @@ from translations import translations
 config = configparser.ConfigParser()
 config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'config.ini')
 config.read(config_path)
-API_KEY = config.get('OpenWeather', 'OpenWeatherMapKey')
+API_KEY = config.get('plugins', 'OpenWeatherMapKey')
 
 # Function to get weather info
 async def get_weather(city_name):
