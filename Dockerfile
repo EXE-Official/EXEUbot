@@ -7,6 +7,11 @@ WORKDIR /app
 # Copy the configuration file and dependencies
 COPY pyproject.toml poetry.lock ./
 
+# Install FFMPEG
+RUN apt update 
+RUN apt upgrade
+RUN apt install ffmpeg
+
 # Install Poetry
 RUN pip install --no-cache-dir poetry
 
