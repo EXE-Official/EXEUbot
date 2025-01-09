@@ -8,9 +8,9 @@ WORKDIR /app
 COPY pyproject.toml poetry.lock ./
 
 # Install FFMPEG
-RUN apt update 
-RUN apt upgrade
-RUN apt install ffmpeg
+RUN apt update -y
+RUN apt upgrade -y
+RUN apt install ffmpeg -y
 
 # Install Poetry
 RUN pip install --no-cache-dir poetry
