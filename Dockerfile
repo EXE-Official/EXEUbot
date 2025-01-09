@@ -1,20 +1,20 @@
-# Usa un'immagine base di Python
+# Use a base Python image
 FROM python:3.12-slim
 
-# Imposta il working directory
+# Set the working directory
 WORKDIR /app
 
-# Copia il file di configurazione e le dipendenze
+# Copy the configuration file and dependencies
 COPY pyproject.toml poetry.lock ./
 
-# Installa Poetry
+# Install Poetry
 RUN pip install --no-cache-dir poetry
 
-# Installa le dipendenze del progetto
+# Install project dependencies
 RUN poetry install --no-interaction --no-ansi
 
-# Copia tutto il progetto nella directory di lavoro
+# Copy the entire project to the working directory
 COPY . .
 
-# Specifica il comando di avvio
+# Specify the startup command
 CMD ["poetry", "run", "python", "main.py"]
