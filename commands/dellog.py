@@ -1,6 +1,6 @@
+import os
 from telethon import TelegramClient, events
 from translations import translations
-import os
 
 async def delete_log(event):
     try:

@@ -1,12 +1,12 @@
 import configparser
 import importlib
-from telethon import TelegramClient, events
 import os
 import traceback
 import asyncio
 import signal
 import logging
 from translations import translations
+from telethon import TelegramClient, events
 
 logging.basicConfig(
     level=logging.WARN,

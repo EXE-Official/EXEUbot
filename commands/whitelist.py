@@ -1,9 +1,9 @@
 import os
-from telethon import events
-from telethon.tl.functions.contacts import BlockRequest
 import commands.database as db
 import configparser
 from translations import translations
+from telethon import events
+from telethon.tl.functions.contacts import BlockRequest
 
 
 config = configparser.ConfigParser()
