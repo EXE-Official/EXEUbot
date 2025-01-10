@@ -1,8 +1,6 @@
 import sqlite3
 import os
 
-# REMOVING THIS FILE WILL CAUSE THE CRASH OF THE USERBOT!!!
-
 DATABASE_PATH = os.path.join(os.path.dirname(__file__), '..', 'databases', 'whitelist.db')
 
 def initialize_database():
