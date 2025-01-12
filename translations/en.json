@@ -64,5 +64,10 @@
     "humidity": "💧 Humidity",
     "wind_speed": "🌬️ Wind Speed",
     "description": "🔍 Description",
-    "pressure": "🔵 Pressure"
+    "pressure": "🔵 Pressure",
+    "// timer.py": "Translations for timer.py",
+    "timer_started": "⏳ Timer started: {reason}\nRemaining: {countdown_time} seconds.",
+    "timer_running": "⏳ Timer started: {reason}\nRemaining: {time_display}",
+    "timer_finished": "✅ Timer finished: {reason}!"
+
 }

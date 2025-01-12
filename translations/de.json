@@ -21,10 +21,10 @@
     "userbot_started": "Userbot gestartet!",
     "userbot_disconnected_cancelled_error": "Userbot wegen einer CancelledError-Ausnahme getrennt.",
     "error_occurred": "Ein Fehler ist aufgetreten: {error}",
-    "abort_signal_received": "Abbruchsignal erhalten. Userbot wird geschlossen...",
+    "abort_signal_received": "Abbruchsignal erhalten. Userbot wird geschlossen…",
     "// video_downloader.py": "Übersetzungen für video_downloader.py",
     "video": "Video: '{video_title}'",
-    "video_downloaded_successfully": "Video '{video_title}' erfolgreich heruntergeladen! Senden...",
+    "video_downloaded_successfully": "Video '{video_title}' erfolgreich heruntergeladen! Senden…",
     "error_downloading_video": "Fehler beim Herunterladen des Videos: {error}",
     "// copy.py": "Übersetzungen für copy.py",
     "copy_successfully": "Konto erfolgreich geklont",
@@ -49,7 +49,7 @@
     "userbot_commands_link": "🤖 [Userbot-Befehle](https://telegra.ph/Userbot-commands-09-11-46)",
     "userbot_created_by": "👤 Userbot erstellt von Elxes ©️",
     "// delall.py": "Übersetzungen für delall.py",
-    "floodwait_error": "Das Konto ist im Floodwait. Warte {waitingtime} Sekunden...",
+    "floodwait_error": "Das Konto ist im Floodwait. Warte {waitingtime} Sekunden…",
     "// backup.py": "Übersetzungen für backup.py",
     "backup_complete": "Informationssicherung abgeschlossen!",
     "backup_error": "Beim Sichern ist ein Fehler aufgetreten: {error}",
@@ -64,5 +64,10 @@
     "humidity": "💧 Luftfeuchtigkeit",
     "wind_speed": "🌬️ Windgeschwindigkeit",
     "description": "🔍 Beschreibung",
-    "pressure": "🔵 Druck"
+    "pressure": "🔵 Druck",
+    "// timer.py": "Übersetzungen für timer.py",
+    "timer_started": "⏳ Timer gestartet: {reason}\nVerbleibend: {countdown_time} Sekunden.",
+    "timer_running": "⏳ Timer gestartet: {reason}\nVerbleibend: {time_display}",
+    "timer_finished": "✅ Timer beendet: {reason}!"
+
 }

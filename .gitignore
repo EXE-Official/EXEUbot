@@ -1,0 +1,9 @@
+*.pyc
+*.ini
+*.txt
+*.session
+*.log
+*.pyc
+__pycache__/
+config.ini
+cookies/cookies.txt

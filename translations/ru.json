@@ -21,10 +21,10 @@
     "userbot_started": "Userbot запущен!",
     "userbot_disconnected_cancelled_error": "Userbot отключен из-за исключения CancelledError.",
     "error_occurred": "Произошла ошибка: {error}",
-    "abort_signal_received": "Получен сигнал прерывания. Закрытие Userbot...",
+    "abort_signal_received": "Получен сигнал прерывания. Закрытие Userbot…",
     "// video_downloader.py": "Переводы для video_downloader.py",
     "video": "Видео: '{video_title}'",
-    "video_downloaded_successfully": "Видео '{video_title}' успешно загружено! Отправка...",
+    "video_downloaded_successfully": "Видео '{video_title}' успешно загружено! Отправка…",
     "error_downloading_video": "Ошибка при загрузке видео: {error}",
     "// copy.py": "Переводы для copy.py",
     "copy_successfully": "Аккаунт успешно клонирован",
@@ -49,7 +49,7 @@
     "userbot_commands_link": "🤖 [Команды Userbot](https://telegra.ph/Userbot-commands-09-11-46)",
     "userbot_created_by": "👤 Userbot создан Elxes ©️",
     "// delall.py": "Переводы для delall.py",
-    "floodwait_error": "Аккаунт в режиме floodwait. Ожидание {waitingtime} секунд...",
+    "floodwait_error": "Аккаунт в режиме floodwait. Ожидание {waitingtime} секунд…",
     "// backup.py": "Переводы для backup.py",
     "backup_complete": "Резервное копирование информации завершено!",
     "backup_error": "Произошла ошибка во время резервного копирования: {error}",
@@ -64,5 +64,10 @@
     "humidity": "💧 Влажность",
     "wind_speed": "🌬️ Скорость ветра",
     "description": "🔍 Описание",
-    "pressure": "🔵 Давление"
+    "pressure": "🔵 Давление",
+    "// timer.py": "Переводы для timer.py",
+    "timer_started": "⏳ Таймер запущен: {reason}\nОсталось: {countdown_time} секунд.",
+    "timer_running": "⏳ Таймер запущен: {reason}\nОсталось: {time_display}",
+    "timer_finished": "✅ Таймер завершён: {reason}!"
+
 }
