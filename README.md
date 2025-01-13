@@ -23,18 +23,33 @@ A free and open-source Telegram userbot based on Telethon and fully modular.
 > [!CAUTION]
 > IF YOU DO NOT HAVE CODING EXPERIENCE, WE DO NOT RECOMMEND PROCEEDING. USING THIS USERBOT REQUIRES SOME KNOWLEDGE OF PYTHON AND THE TELETHON LIBRARY. CONTINUE AT YOUR OWN RISK.
 
-## Installation
+## Installation & Configuration
 
 See the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Installation) for installation instructions.
 
-## Configuration
 
-See the [Wiki](https://github.com/EXE-Official/EXEUbot/wiki/Configuration) for detailed configuration instructions.
+## Features
+
+- Fully modular and customizable
+- Multi-language support
+- Easy to install and configure
+- Based on the powerful Telethon library
+- Regular updates and active community support
+
+## Translation Status
+
+[![Translation Status](https://hosted.weblate.org/widget/exeubot/translations/multi-blue.svg)](https://hosted.weblate.org/engage/exeubot/)
+
+We need your help to translate EXEUbot into different languages! If you are fluent in a language other than English, please consider contributing to our translation efforts. Visit our [Weblate page](https://hosted.weblate.org/engage/exeubot/) to get started.
 
 ## Roadmap
 
 - [x] Multi-Language support (we need translators for other languages)
 - [ ] Plugins repository (coming soon)
+
+## Contributing
+
+We welcome contributions from the community! If you would like to contribute, please check out our [Contributing Guidelines](https://github.com/EXE-Official/EXEUbot/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/EXE-Official/EXEUbot/blob/main/CODE_OF_CONDUCT.md).
 
 ## Donate & Star
 
