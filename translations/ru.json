@@ -68,6 +68,9 @@
     "// timer.py": "Переводы для timer.py",
     "timer_started": "⏳ Таймер запущен: {reason}\nОсталось: {countdown_time} секунд.",
     "timer_running": "⏳ Таймер запущен: {reason}\nОсталось: {time_display}",
-    "timer_finished": "✅ Таймер завершён: {reason}!"
-
+    "timer_finished": "✅ Таймер завершён: {reason}!",
+    "// shorten.py": "Переводы для shorten.py",
+    "url_shortened": "URL сокращен с помощью TinyURL: {shortened_url}",
+    "error_shortening_url": "Произошла ошибка при сокращении URL.",
+    "provide_url_to_shorten": "Пожалуйста, укажите URL для сокращения."
 }

@@ -1,6 +1,9 @@
 from telethon import TelegramClient, events
 import requests
 import re
+import json
+import os
+from translations import translations
 
 async def shorten_url(event):
     
@@ -14,13 +17,13 @@ async def shorten_url(event):
             response = requests.get(api_url)
             if response.status_code == 200:
                 shortened_url = response.text
-                await event.edit(f"URL shortened with TinyURL: {shortened_url}")
+                await event.edit(translations["url_shortened"].format(shortened_url=shortened_url))
             else:
-                await event.reply("An error occurred while shortening the URL.")
+                await event.reply(translations["error_shortening_url"])
         except Exception as e:
-            await event.reply(f"An error occurred: {str(e)}")
+            await event.reply(translations["error_occurred"].format(error=str(e)))
     else:
-        await event.reply("Please provide a URL to shorten.")
+        await event.reply(translations["provide_url_to_shorten"])
 
 def register(client):
     @client.on(events.NewMessage(pattern=r'^\.short\s+\S+', outgoing=True))

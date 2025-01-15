@@ -68,6 +68,9 @@
     "// timer.py": "Tłumaczenia dla timer.py",
     "timer_started": "⏳ Timer uruchomiony: {reason}\nPozostało: {countdown_time} sekund.",
     "timer_running": "⏳ Timer uruchomiony: {reason}\nPozostało: {time_display}",
-    "timer_finished": "✅ Timer zakończony: {reason}!"
-
+    "timer_finished": "✅ Timer zakończony: {reason}!",
+    "// shorten.py": "Tłumaczenia dla shorten.py",
+    "url_shortened": "URL skrócony za pomocą TinyURL: {shortened_url}",
+    "error_shortening_url": "Wystąpił błąd podczas skracania URL.",
+    "provide_url_to_shorten": "Proszę podać URL do skrócenia."
 }
