@@ -2,13 +2,16 @@ import psutil
 import speedtest
 import platform
 import humanize
+import os
 from telethon import TelegramClient, events
 from translations import translations
 
 async def system_info(event):
     try:
-        with open('../version.txt', 'r') as version_file:
-            userbot_version = version_file.read().strip()
+        version_path = os.path.join(os.path.dirname(__file__), "../version.txt")
+        if os.path.exists(version_path):
+            with open(version_path, 'r') as version_file:
+                userbot_version = version_file.read().strip()
 
         cpu_usage = psutil.cpu_percent()
         memory = psutil.virtual_memory()
