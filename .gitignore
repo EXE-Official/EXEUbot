@@ -1,6 +1,5 @@
 *.pyc
 *.ini
-*.txt
 *.session
 *.log
 *.pyc
