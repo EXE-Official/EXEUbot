@@ -13,10 +13,6 @@ A free and open-source Telegram userbot based on Telethon and fully modular.
 
 ## ⚠️ Warnings
 
-
-> [!WARNING]
-> PLEASE NOTE THAT THE USERBOT IS STILL IN BETA STAGE, THIS MEAN THAT BUGS MAY HAPPENS, YOU CAN CONTRIBUTE TO FIX BUGS AND IMPROVE THIS PROJECT
-
 > [!CAUTION]
 > USE OF USERBOT ON TELEGRAM IS PROHIBITED AND MAY RESULT IN THE BANNING OF YOUR ACCOUNT. WE DO NOT ASSUME ANY RESPONSIBILITY. THIS PROJECT IS FOR EDUCATIONAL PURPOSES ONLY.
 
@@ -44,8 +40,9 @@ We need your help to translate EXEUbot into different languages! If you are flue
 
 ## Roadmap
 
-- [x] Multi-Language support (we need translators for other languages)
 - [ ] Plugins repository (coming soon)
+- [ ] Ability to enable/disable a module from the config.ini file
+- [ ] Ability to change commands prefix in config.ini file
 
 ## Contributing
 

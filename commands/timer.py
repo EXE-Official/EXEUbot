@@ -1,6 +1,8 @@
 import re
 import asyncio
+import json
 from telethon import events
+from translations import translations
 
 def register(client):
     @client.on(events.NewMessage(pattern=r'^\.timer (\d+)([hms]) (.+)', outgoing=True))
@@ -9,7 +11,7 @@ def register(client):
             # Parsing the command
             match = re.match(r'^\.timer (\d+)([hms]) (.+)', event.text)
             if not match:
-                await event.reply("Invalid command format. Use `.timer 2m reason`.")
+                await event.reply(translations["invalid_command_format"])
                 return
 
             time_value = int(match.group(1))
@@ -24,25 +26,24 @@ def register(client):
             elif time_unit == 's':
                 countdown_time = time_value
             else:
-                await event.reply("Invalid time unit. Use `h`, `m`, or `s`.")
+                await event.reply(translations["invalid_time_unit"])
                 return
 
             # Initial message
-            message = await event.reply(f"⏳ Timer started: {reason}\nRemaining: {countdown_time} seconds.")
+            message = await event.reply(translations["timer_started"].format(reason=reason, countdown_time=countdown_time))
 
             # Countdown logic
             while countdown_time > 0:
                 countdown_time -= 1
                 time_display = format_time(countdown_time)
-                await message.edit(f"⏳ Timer started: {reason}\nRemaining: {time_display}")
+                await message.edit(translations["timer_running"].format(reason=reason, time_display=time_display))
                 await asyncio.sleep(1)
 
             # Timer finished
-            await message.edit(f"✅ Timer finished: {reason}!")
+            await message.edit(translations["timer_finished"].format(reason=reason))
 
         except Exception as e:
-            await event.reply(f"Error: {str(e)}")
-
+            await event.reply(translations["error_occurred"].format(error=str(e)))
 def format_time(seconds):
     """Format seconds into a more readable hh:mm:ss format."""
     hours, remainder = divmod(seconds, 3600)

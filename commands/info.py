@@ -2,17 +2,23 @@ import psutil
 import speedtest
 import platform
 import humanize
+import os
 from telethon import TelegramClient, events
 from translations import translations
 
 async def system_info(event):
     try:
+        version_path = os.path.join(os.path.dirname(__file__), "../version.txt")
+        if os.path.exists(version_path):
+            with open(version_path, 'r') as version_file:
+                userbot_version = version_file.read().strip()
+
         cpu_usage = psutil.cpu_percent()
         memory = psutil.virtual_memory()
 
         st = speedtest.Speedtest(secure=True)
         server = st.get_best_server()
-        ping = server['latency']
+        ping = int(server['latency'])
 
         system_info = platform.uname()
         python_version = platform.python_version()
@@ -24,7 +30,7 @@ async def system_info(event):
             f"{translations.get('kernel')}: {system_info.release}\n"
             f"{translations.get('python_version')}: {python_version}\n"
             f"{translations.get('telethon_version')}: {telethon_version}\n"
-            f"{translations.get('userbot_version')}: Beta 1.20\n"
+            f"{translations.get('userbot_version')}: {userbot_version}\n"
             f"{translations.get('cpu_usage')}: {cpu_usage}%\n"
             f"{translations.get('ram_usage')}: {memory.percent}% ({humanize.naturalsize(memory.used)})\n"
             f"{translations.get('ram_total')}: {humanize.naturalsize(memory.total)}\n"
