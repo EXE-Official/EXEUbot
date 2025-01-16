@@ -1,7 +1,7 @@
 import re
 import time
 import asyncio
-
+from translations import translations
 
 scheduled_tasks = {}
 
@@ -14,10 +14,8 @@ async def schedule_message(event):
         time_str = match.group(1)
         text = match.group(2)
         
-        
         time_value = int(time_str[:-1])
         time_unit = time_str[-1]
-        
         
         if time_unit == 's':
             time_seconds = time_value
@@ -26,12 +24,10 @@ async def schedule_message(event):
         elif time_unit == 'h':
             time_seconds = time_value * 3600
         else:
-            await event.respond("Invalid time format. Use Xs, Xm or Xh.")
+            await event.respond(translations["invalid_time_format"])
             return
         
-        
         chat_id = event.chat_id
-        
         
         if chat_id not in scheduled_tasks:
             scheduled_tasks[chat_id] = []
@@ -44,4 +40,4 @@ async def schedule_message(event):
         task = asyncio.create_task(send_scheduled_message())
         scheduled_tasks[chat_id].append(task)
         
-        await event.edit(f"I will post '{text}' every {time_str} in this chat. To cancel, use .cancsched")
+        await event.edit(translations["schedule_message_success"].format(text=text, time_str=time_str))

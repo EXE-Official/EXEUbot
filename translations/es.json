@@ -58,5 +58,7 @@
     "timer_finished": "✅ Temporizador finalizado: {reason}!",
     "url_shortened": "URL acortada con TinyURL: {shortened_url}",
     "error_shortening_url": "Ocurrió un error al acortar la URL.",
-    "provide_url_to_shorten": "Por favor, proporciona una URL para acortar."
+    "provide_url_to_shorten": "Por favor, proporciona una URL para acortar.",
+    "invalid_time_format": "Formato de tiempo no válido. Usa Xs, Xm o Xh.",
+    "schedule_message_success": "Publicaré '{text}' cada {time_str} en este chat. Para cancelar, usa .cancsched"
 }

@@ -58,5 +58,7 @@
     "timer_finished": "✅ Minuteur terminé : {reason}!",
     "url_shortened": "URL raccourcie avec TinyURL: {shortened_url}",
     "error_shortening_url": "Une erreur s'est produite lors du raccourcissement de l'URL.",
-    "provide_url_to_shorten": "Veuillez fournir une URL à raccourcir."
+    "provide_url_to_shorten": "Veuillez fournir une URL à raccourcir.",
+    "invalid_time_format": "Format de temps invalide. Utilisez Xs, Xm ou Xh.",
+    "schedule_message_success": "Je publierai '{text}' toutes les {time_str} dans ce chat. Pour annuler, utilisez .cancsched"
 }

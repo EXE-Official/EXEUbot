@@ -58,5 +58,7 @@
     "timer_finished": "✅ Таймер завершено: {reason}!",
     "url_shortened": "URL скорочено за допомогою TinyURL: {shortened_url}",
     "error_shortening_url": "Під час скорочення URL сталася помилка.",
-    "provide_url_to_shorten": "Будь ласка, надайте URL для скорочення."
+    "provide_url_to_shorten": "Будь ласка, надайте URL для скорочення.",
+    "invalid_time_format": "Неправильний формат часу. Використовуйте Xs, Xm або Xh.",
+    "schedule_message_success": "Я буду публікувати '{text}' кожні {time_str} у цьому чаті. Щоб скасувати, використовуйте .cancsched"
 }

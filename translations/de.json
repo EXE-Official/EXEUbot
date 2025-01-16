@@ -58,5 +58,7 @@
     "timer_finished": "✅ Timer beendet: {reason}!",
     "url_shortened": "URL mit TinyURL verkürzt: {shortened_url}",
     "error_shortening_url": "Beim Verkürzen der URL ist ein Fehler aufgetreten.",
-    "provide_url_to_shorten": "Bitte geben Sie eine URL zum Verkürzen an."
+    "provide_url_to_shorten": "Bitte geben Sie eine URL zum Verkürzen an.",
+    "invalid_time_format": "Ungültiges Zeitformat. Verwenden Sie Xs, Xm oder Xh.",
+    "schedule_message_success": "Ich werde '{text}' alle {time_str} in diesem Chat posten. Um abzubrechen, verwenden Sie .cancsched"
 }

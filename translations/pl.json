@@ -58,5 +58,7 @@
     "timer_finished": "✅ Timer zakończony: {reason}!",
     "url_shortened": "URL skrócony za pomocą TinyURL: {shortened_url}",
     "error_shortening_url": "Wystąpił błąd podczas skracania URL.",
-    "provide_url_to_shorten": "Proszę podać URL do skrócenia."
+    "provide_url_to_shorten": "Proszę podać URL do skrócenia.",
+    "invalid_time_format": "Nieprawidłowy format czasu. Użyj Xs, Xm lub Xh.",
+    "schedule_message_success": "Będę publikować '{text}' co {time_str} w tym czacie. Aby anulować, użyj .cancsched"
 }
