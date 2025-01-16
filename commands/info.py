@@ -18,7 +18,7 @@ async def system_info(event):
 
         st = speedtest.Speedtest(secure=True)
         server = st.get_best_server()
-        ping = server['latency']
+        ping = int(server['latency'])
 
         system_info = platform.uname()
         python_version = platform.python_version()
