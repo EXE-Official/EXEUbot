@@ -42,6 +42,7 @@ We need your help to translate EXEUbot into different languages! If you are flue
 
 - [ ] Plugins repository (coming soon)
 - [ ] Ability to enable/disable a module from the config.ini file
+- [ ] Ability to change commands prefix in config.ini file
 
 ## Contributing
 
