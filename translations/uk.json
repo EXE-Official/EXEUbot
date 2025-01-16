@@ -31,7 +31,7 @@
     "telethon_version": "🤖 Телемарафонна версія",
     "userbot_version": "⚙️ Версія Userbot: ",
     "ping": "📶 Пінг",
-    "userbot_commands_link": "🤖 [Команди Userbot](https://telegra.ph/Userbot-commands-09-11-46)",
+    "userbot_commands_link": "🤖 [Команди Userbot](https://github.com/EXE-Official/EXEUbot/wiki/Commands)",
     "userbot_created_by": "👤 Користувач-бот, створений Elxes ©️",
     "floodwait_error": "Обліковий запис знаходиться в стані очікування. Очікування {waitingtime} секунд…",
     "backup_complete": "Резервне копіювання інформації завершено!",

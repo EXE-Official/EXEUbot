@@ -37,7 +37,7 @@
     "ram_usage": "📈 Użycie RAM",
     "ram_total": "📉 Całkowita pamięć RAM",
     "ping": "📶 Ping",
-    "userbot_commands_link": "🤖 [Komendy Userbot](https://telegra.ph/Userbot-commands-09-11-46)",
+    "userbot_commands_link": "🤖 [Komendy Userbot](https://github.com/EXE-Official/EXEUbot/wiki/Commands)",
     "userbot_created_by": "👤 Userbot stworzony przez Elxes ©️",
     "floodwait_error": "Konto jest w trybie floodwait. Czekaj {waitingtime} sekund…",
     "backup_complete": "Kopia zapasowa informacji zakończona!",
